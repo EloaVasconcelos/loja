@@ -1,0 +1,11 @@
+/* Remove this extra closing curly brace */
+/* } */
+
+.item-image {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: aquamarine;
+}

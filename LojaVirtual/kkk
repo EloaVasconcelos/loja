@@ -1,0 +1,27 @@
+SELECT* FROM tbcategoria;
+
+CREATE VIEW vw_MoletomOFC2 AS
+SELECT
+  tbMoletons.Codigo_Moletom,
+  tbMoletons.Nome,
+  tbMoletons.Cor,
+  tbMoletons.Genero,
+  tbMoletons.Valor,
+  tbMoletons.Imagem,
+  tbitem_tamanho.Qtd_estoque,
+  tbTamanho.Cod_tamanho
+FROM tbMoletons
+INNER JOIN tbitem_tamanho
+ON tbMoletons.Codigo_Moletom = tbitem_tamanho.Codigo_Moletom
+INNER join tbTamanho on TbMoletons.Cod_tamanho = tbTamanho.Cod_tamanho;
+
+select * from tbtamanho;
+
+
+
+
+
+
+
+
+select * from vw_MoletomOFC10;
